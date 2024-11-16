@@ -1,0 +1,27 @@
+<div class="col mt-4">
+    <div class="timeline-body bg-themed">
+        {% for item in site.data.education %}
+        <div class="timeline-item">
+            <div class="content">
+                <!-- Title and Right-Aligned Text -->
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <h2 style="margin: 0;">{{ item.title }}</h2>
+                    <span style="margin-left: auto; text-align: right; font-size: 1.0em; color: black;">
+                        {{ item.institute }}, {{ item.country }}
+                    </span>
+                </div>
+                <!-- Date -->
+                <h6 class="date" style="margin: 0; margin-top: 0.5rem; font-size: 1.0em; color: gray;">
+                    {{ item.from }} — {{ item.to }}
+                </h6>
+                <!-- Bullet Points -->
+                <ul>
+                    {% for point in item.content %}
+                    <li>{{ point }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

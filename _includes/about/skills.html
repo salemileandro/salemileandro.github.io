@@ -1,0 +1,12 @@
+<div class="col-lg">
+  <h2 class="mb-3">{{ include.title }}</h2>
+  <div>
+    {% for skill in include.source %}
+    <span style="
+          font-size: 1.0em;
+          color: {{ skill.color | default: " #000" }}; margin-right: 7px; display: inline-block; ">
+      {{ skill.name }},
+    </span>
+    {% endfor %}
+  </div>
+</div>
