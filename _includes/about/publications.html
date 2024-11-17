@@ -1,0 +1,17 @@
+<div class="col-lg publications-section">
+    <h2 class="mb-3">{{ include.title }}</h2>
+    <ul>
+        {% for publication in include.source %}
+        <li>
+            {% if publication.url %}
+            <a href="{{ publication.url }}" target="_blank">
+                {{ publication.name }}
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+            {% else %}
+            <span>{{ publication.name }}</span>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+</div>

@@ -1,0 +1,44 @@
+.publications-section {
+    ul {
+      list-style: none; /* Remove default bullet points */
+      padding: 0; /* Remove default padding */
+      margin: 0; /* Remove default margin */
+    }
+  
+    li {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem; /* Indent the list item */
+      position: relative; /* Position for a custom marker (optional) */
+    }
+  
+    a {
+      text-decoration: none;
+      color: #555;
+      font-weight: bold;
+  
+      i {
+        font-size: 0.8em;
+        margin-left: 5px;
+        color: #777;
+      }
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    span {
+      font-weight: bold;
+      color: #555;
+    }
+  
+    li::before {
+      content: "•"; /* Optional: Add a custom bullet point */
+      color: #777;
+      position: absolute;
+      left: 0;
+      font-size: 1.2em;
+      line-height: 1.2em;
+    }
+  }
+  

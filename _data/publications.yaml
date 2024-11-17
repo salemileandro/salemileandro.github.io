@@ -1,0 +1,10 @@
+- name: "A Comprehensive Guide to Machine Learning"
+  url: "https://example.com/machine-learning-guide"
+
+- name: "Deep Learning in Practice"
+  url: "https://example.com/deep-learning-practice"
+
+- name: "Understanding AI Ethics"
+  url: "https://example.com/ai-ethics"
+
+- name: "Foundations of Data Science"

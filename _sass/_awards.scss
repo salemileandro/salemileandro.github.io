@@ -1,0 +1,26 @@
+.awards-section {
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: 1.5rem;
+  }
+
+  h5 {
+    margin: 0;
+    font-weight: bold;
+  }
+
+  .award-meta {
+    margin: 0.3rem 0;
+    font-size: 0.9em;
+    color: #707070;
+  }
+
+  .award-description {
+    margin-top: 0.5rem;
+    color: #333;
+  }
+}

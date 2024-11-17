@@ -1,0 +1,37 @@
+Programming & Platforms:
+  - Linux
+  - MacOS
+  - Windows (+WSL)
+  - UNIX command-line
+  - Python
+  - SQL
+  - R
+  - C++
+  - Bash
+  - Git
+  - GitHub/GitLab
+Python:
+  - Numpy
+  - Pandas
+  - Polars
+  - Matplotlib
+  - Streamlit
+  - Pydantic
+  - Optuna
+Machine Learning:
+  - TensorFlow
+  - Pytorch
+  - JAX
+  - Keras
+  - Numpyro
+  - Sklearn
+  - Kedro
+Cloud & MLOps:
+  - AWS
+  - SSH (headless servers)
+  - Docker
+  - Traefik
+  - MLFlow
+  - DVC
+  - BentoML
+  - FastAPI

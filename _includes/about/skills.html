@@ -1,12 +1,20 @@
 <div class="col-lg">
-  <h2 class="mb-3">{{ include.title }}</h2>
   <div>
-    {% for skill in include.source %}
-    <span style="
-          font-size: 1.0em;
-          color: {{ skill.color | default: " #000" }}; margin-right: 7px; display: inline-block; ">
-      {{ skill.name }},
-    </span>
+    {% for category in include.source %}
+    <div style="display: flex; align-items: baseline; margin-bottom: 1rem;">
+      <!-- Skill Set Name -->
+      <h5 style="margin: 0; flex: 1; color: #333;">{{ category[0] }}</h5>
+      <!-- Skills -->
+      <div style="flex: 3;">
+        {% for skill in category[1] %}
+        <span style="
+              font-size: 1.0em;
+              color: #707070;">
+          {{ skill }}{% if forloop.last == false %}, {% endif %}
+        </span>
+        {% endfor %}
+      </div>
+    </div>
     {% endfor %}
   </div>
 </div>

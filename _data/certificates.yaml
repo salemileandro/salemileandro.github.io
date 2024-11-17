@@ -1,0 +1,23 @@
+- name: "日本語能力試験 JLPT N2"
+  date: "August 2024"
+  issued_by: "The Japan Foundation & Japan Educational Exchanges and Services"
+
+- name: "IBM Data Science"
+  date: "February 2022"
+  issued_by: "IBM (Coursera)"
+  url: "https://www.coursera.org/account/accomplishments/specialization/certificate/U9ZWTAHDDKYA"
+
+- name: "Finance & Quantitative Modeling for Analysts"
+  date: "December 2020"
+  issued_by: "University of Pennsylvania (Coursera)"
+  url: "https://www.coursera.org/account/accomplishments/specialization/certificate/BVYRDBAYCT5M"
+
+- name: "Deep Learning"
+  date: "March 2020"
+  issued_by: "DeepLearning.ai (Coursera)"
+  url: "https://www.coursera.org/account/accomplishments/specialization/certificate/X2LCSNFN7TWR"
+
+- name: "Machine Learning"
+  date: "August 2019"
+  issued_by: "University of Washington (Coursera)"
+  url: "https://www.coursera.org/account/accomplishments/specialization/certificate/PTR6KURQAVYN"

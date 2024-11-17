@@ -1,0 +1,32 @@
+<div class="col-lg">
+    <div style="
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1rem;">
+        {% for certificate in include.source %}
+        <div style="
+        box-sizing: border-box; 
+        padding: 1rem; 
+        border: 1px solid #ddd; 
+        border-radius: 5px; 
+        background-color: #f9f9f9;">
+            <!-- Certificate Name -->
+            {% if certificate.url %}
+            <h5 style="margin: 0; font-weight: bold;">
+                <a href="{{ certificate.url }}" target="_blank" style="text-decoration: none; color: inherit;">
+                    {{ certificate.name }}
+                    <i class="fas fa-external-link-alt" style="font-size: 0.8em; margin-left: 5px; color: #555;"></i>
+                </a>
+            </h5>
+            {% else %}
+            <h5 style="margin: 0; font-weight: bold;">{{ certificate.name }}</h5>
+            {% endif %}
+            <!-- Certificate Date -->
+            <p style="margin: 0.5rem 0; color: #707070;">{{ certificate.date }}</p>
+            <!-- Certificate Issued By -->
+            <p style="margin: 0; font-size: 0.9em; color: #555;">Issued by: <span style="font-weight: bold;">{{
+                    certificate.issued_by }}</span></p>
+        </div>
+        {% endfor %}
+    </div>
+</div>

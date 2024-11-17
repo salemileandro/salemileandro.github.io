@@ -5,11 +5,21 @@
     <div id="container" class="my-2">
       <div id="dummy"></div>
       <div id="element">
-        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn" data-wow-delay=".1s">
+        <img src="{{ site.author.image }}" alt="{{ site.title }}" class="circle-image wow animated zoomIn"
+          data-wow-delay=".1s">
       </div>
     </div>
+    <h3 class="wow animated fadeInUp">Data Scientist <br> ML/AI Engineer</h3>
 
-    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s">{{ site.description }}</p>
+    <p class="text-muted wow animated slideInUp" data-wow-delay=".15s" style="font-size: 1.1em;">
+      {{ site.description }}
+    </p>
 
   </div>
 </div>
+
+<p class="text-center wow animated slideInUp" data-wow-delay=".15s">
+  {% include elements/button.html link="/cv/" text="Explore My CV" %}
+  {% include elements/button.html link="/japanese-introduction/" text="日本語" %}
+  {% include elements/button.html link="/contact/" text="Get in Touch" %}
+</p>

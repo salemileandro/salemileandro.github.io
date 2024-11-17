@@ -1,0 +1,23 @@
+.certificate-card {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .certificate-card h5 {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .certificate-card p {
+    margin: 0.5rem 0;
+    color: #707070;
+  }
+  
+  .certificate-card p:last-child {
+    margin: 0;
+    font-size: 0.9em;
+    color: #555;
+  }
+  
