@@ -1,0 +1,124 @@
+/* Base callout style */
+.callout {
+    border-radius: 8px;
+    padding: 15px 20px;
+    margin: 20px 0;
+    border-left: 5px solid;
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background-color: var(--callout-bg-color);
+    color: var(--callout-text-color);
+  }
+  
+  .callout::before {
+    content: var(--callout-icon);
+    font-size: 24px;
+    margin-right: 10px;
+    line-height: 1;
+  }
+  
+  /* Default callout (note) */
+  .callout-note {
+    --callout-bg-color: #e2f4ff;
+    --callout-text-color: #004085;
+    --callout-icon: "📝";
+    border-left-color: #007bff;
+  }
+  
+  /* Abstract (summary, tldr) */
+  .callout-abstract {
+    --callout-bg-color: #f5f5dc;
+    --callout-text-color: #6c757d;
+    --callout-icon: "📘";
+    border-left-color: #6c757d;
+  }
+  
+  /* Info */
+  .callout-info {
+    --callout-bg-color: #e7f3fe;
+    --callout-text-color: #0c5460;
+    --callout-icon: "ℹ️";
+    border-left-color: #17a2b8;
+  }
+  
+  /* Todo */
+  .callout-todo {
+    --callout-bg-color: #fff3cd;
+    --callout-text-color: #856404;
+    --callout-icon: "📝";
+    border-left-color: #ffc107;
+  }
+  
+  /* Tip (hint, important) */
+  .callout-tip {
+    --callout-bg-color: #d4edda;
+    --callout-text-color: #155724;
+    --callout-icon: "💡";
+    border-left-color: #28a745;
+  }
+  
+  /* Success (check, done) */
+  .callout-success {
+    --callout-bg-color: #d4edda;
+    --callout-text-color: #155724;
+    --callout-icon: "✅";
+    border-left-color: #28a745;
+  }
+  
+  /* Question (help, faq) */
+  .callout-question {
+    --callout-bg-color: #e7e3ff;
+    --callout-text-color: #5a4f95;
+    --callout-icon: "❓";
+    border-left-color: #5a4f95;
+  }
+  
+  /* Warning (caution, attention) */
+  .callout-warning {
+    --callout-bg-color: #fff3cd;
+    --callout-text-color: #856404;
+    --callout-icon: "⚠️";
+    border-left-color: #ffc107;
+  }
+  
+  /* Failure (fail, missing) */
+  .callout-failure {
+    --callout-bg-color: #f8d7da;
+    --callout-text-color: #721c24;
+    --callout-icon: "❌";
+    border-left-color: #dc3545;
+  }
+  
+  /* Danger (error) */
+  .callout-danger {
+    --callout-bg-color: #f8d7da;
+    --callout-text-color: #721c24;
+    --callout-icon: "⚠️";
+    border-left-color: #dc3545;
+  }
+  
+  /* Bug */
+  .callout-bug {
+    --callout-bg-color: #ffefd5;
+    --callout-text-color: #663399;
+    --callout-icon: "🐞";
+    border-left-color: #663399;
+  }
+  
+  /* Example */
+  .callout-example {
+    --callout-bg-color: #e2f4ff;
+    --callout-text-color: #004085;
+    --callout-icon: "📖";
+    border-left-color: #007bff;
+  }
+  
+  /* Quote (cite) */
+  .callout-quote {
+    --callout-bg-color: #f8f9fa;
+    --callout-text-color: #6c757d;
+    --callout-icon: "💬";
+    border-left-color: #6c757d;
+  }
+  

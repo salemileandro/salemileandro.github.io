@@ -1,0 +1,53 @@
+.toc-container {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto; /* Center the TOC */
+}
+
+.toc-container h2 {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.toc-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc-container li {
+    margin: 5px 0;
+}
+
+.toc-container li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.toc-container li a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.toc-container li ul {
+    margin-left: 20px; /* Indent sub-items */
+}
+
+.toc-container li ul li a {
+    font-weight: normal; /* Sub-items less prominent */
+}
+
+code {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 2px 4px; /* Small padding around the text */
+    border-radius: 4px; /* Rounded corners */
+    font-family: monospace; /* Monospace font */
+    font-size: 0.9em; /* Slightly smaller text */
+    color: #d63384; /* Optional: Customize the text color */
+  }

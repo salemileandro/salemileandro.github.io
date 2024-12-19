@@ -2,7 +2,7 @@
 layout: page
 title: CV
 permalink: /cv/
-weight: 1
+weight: 2
 ---
 
 # **About Me**

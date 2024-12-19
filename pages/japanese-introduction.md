@@ -1,8 +1,8 @@
 ---
 layout: page
-title: サレ三・レアンドロ
+title: 日本語
 permalink: /japanese-introduction/
-weight: 10
+weight: 1
 ---
 
 # はじめまして！
