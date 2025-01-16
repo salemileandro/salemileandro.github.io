@@ -10,6 +10,7 @@ Programming & Platforms:
   - Bash
   - Git
   - GitHub/GitLab
+  - ...
 Python:
   - Numpy
   - Pandas
@@ -18,6 +19,7 @@ Python:
   - Streamlit
   - Pydantic
   - Optuna
+  - ...
 Machine Learning:
   - TensorFlow
   - Pytorch
@@ -26,6 +28,7 @@ Machine Learning:
   - Numpyro
   - Sklearn
   - Kedro
+  - ...
 Cloud & MLOps:
   - AWS
   - SSH (headless servers)
@@ -35,3 +38,4 @@ Cloud & MLOps:
   - DVC
   - BentoML
   - FastAPI
+  - ...
