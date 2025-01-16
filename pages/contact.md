@@ -23,9 +23,11 @@ weight: 4
       <div class="col-md-8 text-center">
         <div class="social-links d-flex justify-content-center">
           <!-- GitHub -->
+          <!--
           <a href="https://github.com/salemileandro" target="_blank" class="text-dark mx-3">
             <i class="fab fa-github fa-2x"></i>
           </a>
+          -->
           <!-- LinkedIn -->
           <a href="https://www.linkedin.com/in/leandro-salemi/" target="_blank" class="text-dark mx-3">
             <i class="fab fa-linkedin fa-2x"></i>

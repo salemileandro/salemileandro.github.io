@@ -21,14 +21,14 @@ nav_exclude: # The following paths are excluded from navbar
   - documentation/partials/** # For Documentation Only
   - pages/blog.html
   - pages/projects.html
-  - pages/japanese-introduction.md
+  #- pages/japanese-introduction.md
 
 ### Author Info ###
 author:
   name: Leandro Salemi
   image: assets/images/bio-photo.jpg
   email: salemileandro@gmail.com
-  github: salemileandro
+  #github: salemileandro
   linkedin: leandro-salemi
 
 ### Posts ###
