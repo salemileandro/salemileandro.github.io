@@ -16,8 +16,6 @@ weight: 1
 
 ヨーロッパで数年間、日本語に触れる機会をいただいておりますが、これまで日本に住んだ経験はございません。日本語や日本文化に深い敬意を抱いており、より流暢に日本語を話せるようになるため日々努力しております。私の日本語はまだ完璧とは言えませんが、人とコミュニケーションを取ることを恐れず、これからの出会いや交流を通じて多くを学びたいと考えています。
 
-
-私についてさらにお知りになりたい場合は、ぜひお気軽にメールでご連絡ください:
-<a href="mailto:salemileandro@gmail.com" class="text-dark">salemileandro@gmail.com</a>
+ご興味をお持ちいただけましたら、ぜひお気軽に <a href="mailto:salemileandro@gmail.com" class="text-dark">salemileandro@gmail.com</a> までご連絡ください。
 
 どうぞよろしくお願いいたします。
