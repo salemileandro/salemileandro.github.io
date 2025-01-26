@@ -10,32 +10,42 @@ Programming & Platforms:
   - Bash
   - Git
   - GitHub/GitLab
-  - ...
-Python:
+  - environment management (conda, rye, venv)
+  - etc.
+Python & ML:
   - Numpy
   - Pandas
   - Polars
   - Matplotlib
+  - Plotly
   - Streamlit
   - Pydantic
   - Optuna
-  - ...
-Machine Learning:
   - TensorFlow
   - Pytorch
   - JAX
   - Keras
   - Numpyro
   - Sklearn
-  - Kedro
-  - ...
+  - XGBoost
+  - Hugging Face
+  - LangChain
+  - etc.
 Cloud & MLOps:
-  - AWS
-  - SSH (headless servers)
+  - AWS (S3, Glue, Athena, SageMaker, etc.)
+  - SSH
+  - ETL & ELT
   - Docker
   - Traefik
+  - Kedro
   - MLFlow
   - DVC
   - BentoML
   - FastAPI
-  - ...
+  - etc.
+Leadership & Communication:
+  - Project Management
+  - Team Leadership
+  - Public Speaking
+  - Technical Writing
+  - etc.
