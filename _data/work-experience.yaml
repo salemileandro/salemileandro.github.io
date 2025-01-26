@@ -16,7 +16,7 @@
   content:
     - "Promoted from Data Scientist to Senior Data Scientist in July 2023."
     - "Led and implemented a geo-testing framework based on the Synthetic Control Method with a Bayesian compute engine, doubling the analytical offering reach, and securing partnerships with Meta and TikTok."
-    - "Conducted time series analysis using Bayesian and classical machine learning methodologies, market saturation regression analysis, and developed ML models for Media Mix Modeling (MMM)."
+    - "Conducted time series analysis using Bayesian and classical machine learning methodologies, market saturation regression analysis, and developed ML models for Media Mix Modeling (MMM) for ad-spend optimization."
     - "Architected and maintained ETL pipelines with Airflow, AWS, and Snowflake, and the MLOps infrastructure."
     - "Deployed user-friendly data-driven dashboards and apps to scale data discovery across non-technical teams. "
     - "Mentored and trained junior team members in advanced data science techniques. "

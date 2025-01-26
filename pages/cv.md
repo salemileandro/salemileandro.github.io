@@ -31,10 +31,6 @@ Feel free to [contact me](/contact/) if you want to know more!
 [日本語での自己紹介はこちらへ](/japanese-introduction/)
 
 
-# Skills
-<div class="row">
-    {% include about/skills.html title="Programming Skills" source=site.data.skills %}
-</div>
 
 # Professional Experience 
 <div class="row">
@@ -47,12 +43,15 @@ Feel free to [contact me](/contact/) if you want to know more!
     {% include about/education.html %}
 </div>
 
-
-
 # Certificates
 
 <div class="row">
   {% include about/certificates.html source=site.data.certificates %}
+</div>
+
+# Skills
+<div class="row">
+    {% include about/skills.html title="Programming Skills" source=site.data.skills %}
 </div>
 
 # Awards
