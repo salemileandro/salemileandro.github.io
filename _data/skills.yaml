@@ -1,8 +1,10 @@
-Programming & Platforms:
+Platforms:
   - Linux
   - MacOS
   - Windows (+WSL)
-  - UNIX command-line
+  - headless servers (SSH)
+  - full UNIX command-line proficiency
+Programming:
   - Python
   - SQL
   - R
@@ -28,24 +30,27 @@ Python & ML:
   - Numpyro
   - Sklearn
   - XGBoost
+  - PySpark
   - Hugging Face
   - LangChain
   - etc.
 Cloud & MLOps:
   - AWS (S3, Glue, Athena, SageMaker, etc.)
   - SSH
-  - ETL & ELT
+  - ETL
   - Docker
   - Traefik
   - Kedro
   - MLFlow
   - DVC
   - BentoML
+  - Data warehouses
+  - Data lakes
   - FastAPI
   - etc.
 Leadership & Communication:
-  - Project Management
-  - Team Leadership
-  - Public Speaking
-  - Technical Writing
-  - etc.
+  - Project planning and management
+  - Excellent communication skills
+  - Experienced at teaching and managing groups of more than 20 people
+  - Technical Writing (scientific papers, reports, documentation)
+  - Strong work ethic
