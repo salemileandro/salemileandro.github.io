@@ -2,7 +2,7 @@
 layout: page
 title: 日本語
 permalink: /japanese-introduction/
-weight: 1
+weight: 3
 ---
 
 # はじめまして！

@@ -66,6 +66,11 @@
     word-wrap: break-word;
   }
 
+  pre code {
+    display: block;
+    padding-left: 0 !important;
+  }
+  
   code.highlighter-rouge {
     background-color: $light;
     color: $dark;
