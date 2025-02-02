@@ -138,8 +138,8 @@ Now that we've got Bayes' Theorem under our belt, let's connect it to machine le
 At its core, machine learning involves two key ingredients:
 
 * **The Data:** We start with an observed dataset of $$M$$ observations,
-$$\mathcal{D}=\{\mathbf{x}_i; y_i\}$$, where each $$\mathbf{x}^i = (x^i_1, x^i_2, ..., x^i_M) \in \mathcal{R}^M$$
-represents the feature vector for the $$i^{th}$$ observation, and $$y^i \in \mathcal{R}$$
+$$\mathcal{D}=\{\mathbf{x}^i; y_i\}$$, where each $$\mathbf{x}^i = (x^i_1, x^i_2, ..., x^i_M) \in \mathcal{R}^M$$
+represents the feature vector for the $$i^{th}$$ observation, and $$y_i \in \mathcal{R}$$
 is the corresponding target value (what we're trying to predict).
 * **The Model:** We use a model $$\mathcal{M}_{\hat{\boldsymbol{\theta}}}$$ to 
 capture the relationship between the features and the target. This model is defined by 
@@ -242,7 +242,7 @@ regression models) and a Gaussian prior on the parameters:
 
 
 $$p(\mathcal{D} | \hat{\boldsymbol{\theta}}) = \prod_i \frac{1}{\sqrt{2\pi\sigma_{lh}^2}} 
-\exp\Big(- \frac{[y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}_i)]^2}{2\sigma_{lh}^2}\Big)
+\exp\Big(- \frac{[y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}^i)]^2}{2\sigma_{lh}^2}\Big)
 $$
 
 $$p(\hat{\boldsymbol{\theta}}) = \prod_i \frac{1}{\sqrt{2\pi\sigma_{p}^2}} 
@@ -256,7 +256,7 @@ expressions gives:
 
 $$\ln\Big(p(\mathcal{D} | \hat{\boldsymbol{\theta}})\Big)
 = \sum_i \ln\Big(\frac{1}{\sqrt{2\pi\sigma_{lh}^2}}\Big)
-- \sum_i \frac{ [y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}_i)]^2}{2\sigma_{lh}^2}
+- \sum_i \frac{ [y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}^i)]^2}{2\sigma_{lh}^2}
 $$
 
 $$\ln\Big(p(\hat{\boldsymbol{\theta}})\Big) =
@@ -268,15 +268,15 @@ Plugging these back into our MAP equation (and ignoring constant terms since the
 don't affect optimization), we get:
 
 $$\hat{\boldsymbol{\theta}}_{\text{MAP}} = \arg \max_{\hat{\boldsymbol{\theta}}}\Bigg[
-- \sum_i \frac{ [y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}_i)]^2}{2\sigma_{lh}^2}
+- \sum_i \frac{ [y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}^i)]^2}{2\sigma_{lh}^2}
 - \sum_i \frac{\theta_i^2}{2\sigma_{p}^2}
 \Bigg]$$  
 
-We can multiply everything inside the bracking by "$$-1$$" if we swap the 
+We can multiply everything inside the brackets by "$$-1$$" if we swap the 
 "$$\arg \max$$" to "$$\arg \min$$". Rearranging a bit the expression, we get:
 
 $$\hat{\boldsymbol{\theta}}_{\text{MAP}} = \arg \min_{\hat{\boldsymbol{\theta}}}\Bigg[
-\sum_i [y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}_i)]^2
+\sum_i [y_i - \mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}^i)]^2
  + \frac{\sigma_{lh}^2}{\sigma_{p}^2} \sum_i \theta_i^2
 \Bigg]$$  
 
@@ -286,6 +286,9 @@ and the second term is a regularization term, where the strength of the penalty 
 determined by $$\frac{\sigma_{lh}^2}{\sigma_{p}^2}$$. If you define 
 $$\lambda = \frac{\sigma_{lh}^2}{\sigma_{p}^2}$$, you recover the usual formulation of 
 Ridge regression!
+
+> Note that if we had used a Laplace distribution for the priors, we would have ended
+> with a L1 regularization term! 
 
 So, what does this tell us? Bayesian ML and classical ML are not as different as they 
 might seem! The only difference is that classical ML typically finds a single best set
@@ -498,9 +501,9 @@ model is a neural network! Here's a simple shallow network for illustration:
 
 
 
-$$\mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}_i)
+$$\mathcal{M}_{\hat{\boldsymbol{\theta}}}(\mathbf{x}^i)
 = \mathbf{w}_2 \cdot \tanh\Big(
-\mathbf{x}_i \cdot  \mathbf{w}_1 
+\mathbf{x}^i \cdot  \mathbf{w}_1 
 + \mathbf{b}_1
 \Big) +  b_2$$
 
@@ -534,7 +537,7 @@ def model(X: jax.Array | np.ndarray, y: jax.Array | np.ndarray | None = None):
 
 ```
 
-This model defines a simple feedforward neural network with one hidden layer. The 
+This model defines a simple feedforward neural network. The 
 parameters of the model, weights and biases, are all treated as random variables with
 prior distributions. By using MCMC (as we did with Bayesian linear regression), we can
 sample from the posterior distribution of these parameters.
@@ -553,11 +556,10 @@ range of seen data!
 # 6. Conclusion
 We started this journey by demystifying Bayesian Machine Learning, breaking down its 
 foundations, and showing that it's not as different from classical ML as it might seem.
-Instead of treating Bayesian ML as an intimidating, we've seen
-that it naturally extends classical ML, offering a powerful way to quantify uncertainty
-and make better-informed predictions.
+We've seen that it naturally extends classical ML, offering a powerful way to quantify
+uncertainty and make better-informed predictions.
 
-Here are some key takeaways:
+**Here are some key takeaways:**
 
 * Bayesian ML can help you make better decisions. Classical ML gives us a single 
 "best guess," but Bayesian ML tells us how confident we should be in that guess.
@@ -583,13 +585,13 @@ I encourage you to dig deeper and experiment with these techniques.
 
 
 
-Now, let's be real: Bayesian ML isn't always the answer. It's often computationally 
+Now, let's be real: **Bayesian ML isn't always the answer**. It's often computationally 
 expensive, and since it's not as mainstream as classical ML, there are fewer ready-made
 examples and tutorials available. In many cases, classical ML is the more practical
 choice, and there are still ways to estimate confidence intervals without going fully
 Bayesian.
 
-At the end of the day, there's no "one-size-fits-all" approach in ML. The best method 
+At the end of the day, **there's no "one-size-fits-all" approach in ML**. The best method 
 depends on your specific problem, your data, and your constraints. The important thing 
 is that now, hopefully thanks to this blog post, you have a deeper understanding of
 Bayesian ML, and you can make a more informed decision on when (or when not) to use it. 
