@@ -2,7 +2,7 @@
 layout: page
 title: CV
 permalink: /cv/
-weight: 2
+weight: 4
 ---
 
 # **About Me**
@@ -23,8 +23,7 @@ development and version control with Git and GitHub/GitLab.
 Beyond my technical skills, I excel at managing and leading both research and business 
 projects. I’m autonomous, self-driven, and have a knack for planning and execution. With
 fluency in French and English and advanced Japanese proficiency (JLPT N2), I enjoy 
-collaborating in multicultural teams and thrive in dynamic environments. I’m mobile, 
-adaptable, and always eager to take on new challenges, wherever they may lead.
+collaborating in multicultural teams and thrive in dynamic environments.
 
 Feel free to [contact me](/contact/) if you want to know more!
 
